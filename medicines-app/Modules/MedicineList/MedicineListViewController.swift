@@ -71,7 +71,7 @@ extension MedicineListViewController: MedicineListPresenterToViewProtocol {
 
 extension MedicineListViewController: MedicineListCellDelegate {
     func buttonTapped(cell: MedicineListTableViewCell) {
-        guard let indexPath = self.tableViewPackage.indexPath(for: cell) else {
+        guard let indexPath = self.tableView.indexPath(for: cell) else {
             return
         }
     }

@@ -9,7 +9,7 @@
 import UIKit
 
 protocol MedicineListCellDelegate: class {
-    func buttonTapped(cell: MedicationResponse)
+    func buttonTapped(cell: MedicineListTableViewCell)
 }
 
 class MedicineListTableViewCell: UITableViewCell {
