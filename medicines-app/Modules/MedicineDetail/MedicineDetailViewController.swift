@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MedicineDetailViewController: UIViewController {
 
@@ -53,6 +54,8 @@ class MedicineDetailViewController: UIViewController {
         default:
             labelStatus.textColor = .black
         }
+        
+        imageViewPrescription.sd_setImage(with: URL(string: medicineDetail.prescription_image ?? ""))
     }
 }
 
