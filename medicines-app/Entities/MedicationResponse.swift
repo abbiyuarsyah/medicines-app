@@ -8,7 +8,7 @@
 
 import SwiftyJSON
 
-class MedicineResponse: GenericResponse {
+class MedicationResponse: GenericResponse {
     
     var id: String?
     var status: String?

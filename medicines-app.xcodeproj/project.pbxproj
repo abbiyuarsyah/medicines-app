@@ -21,7 +21,16 @@
 		93F00F91248E523B0043C6C9 /* HttpHeaderConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00F90248E523B0043C6C9 /* HttpHeaderConstant.swift */; };
 		93F00F93248E52540043C6C9 /* BaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00F92248E52540043C6C9 /* BaseApi.swift */; };
 		93F00F95248E52770043C6C9 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00F94248E52770043C6C9 /* GenericResponse.swift */; };
-		93F00F97248E52A00043C6C9 /* MedicineResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00F96248E52A00043C6C9 /* MedicineResponse.swift */; };
+		93F00F97248E52A00043C6C9 /* MedicationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00F96248E52A00043C6C9 /* MedicationResponse.swift */; };
+		93F00F9B248E53840043C6C9 /* ApiMedications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00F9A248E53840043C6C9 /* ApiMedications.swift */; };
+		93F00FA2248E53E60043C6C9 /* MedicineListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00FA1248E53E60043C6C9 /* MedicineListContract.swift */; };
+		93F00FA4248E54320043C6C9 /* MedicineListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00FA3248E54320043C6C9 /* MedicineListViewController.swift */; };
+		93F00FA6248E54480043C6C9 /* MedicineList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F00FA5248E54480043C6C9 /* MedicineList.storyboard */; };
+		93F00FA8248E54590043C6C9 /* MedicineListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00FA7248E54590043C6C9 /* MedicineListPresenter.swift */; };
+		93F00FAA248E54680043C6C9 /* MedicineListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00FA9248E54680043C6C9 /* MedicineListInteractor.swift */; };
+		93F00FAC248E54CE0043C6C9 /* MedicineListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00FAB248E54CE0043C6C9 /* MedicineListRouter.swift */; };
+		93F00FAF248E55400043C6C9 /* MedicineListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00FAD248E55400043C6C9 /* MedicineListTableViewCell.swift */; };
+		93F00FB0248E55400043C6C9 /* MedicineListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93F00FAE248E55400043C6C9 /* MedicineListTableViewCell.xib */; };
 		B126A9D85CFC67FFEFC04064 /* Pods_medicines_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2BF1AC0C716877B711A0197 /* Pods_medicines_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +75,16 @@
 		93F00F90248E523B0043C6C9 /* HttpHeaderConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHeaderConstant.swift; sourceTree = "<group>"; };
 		93F00F92248E52540043C6C9 /* BaseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApi.swift; sourceTree = "<group>"; };
 		93F00F94248E52770043C6C9 /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
-		93F00F96248E52A00043C6C9 /* MedicineResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineResponse.swift; sourceTree = "<group>"; };
+		93F00F96248E52A00043C6C9 /* MedicationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationResponse.swift; sourceTree = "<group>"; };
+		93F00F9A248E53840043C6C9 /* ApiMedications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMedications.swift; sourceTree = "<group>"; };
+		93F00FA1248E53E60043C6C9 /* MedicineListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineListContract.swift; sourceTree = "<group>"; };
+		93F00FA3248E54320043C6C9 /* MedicineListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineListViewController.swift; sourceTree = "<group>"; };
+		93F00FA5248E54480043C6C9 /* MedicineList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MedicineList.storyboard; sourceTree = "<group>"; };
+		93F00FA7248E54590043C6C9 /* MedicineListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineListPresenter.swift; sourceTree = "<group>"; };
+		93F00FA9248E54680043C6C9 /* MedicineListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineListInteractor.swift; sourceTree = "<group>"; };
+		93F00FAB248E54CE0043C6C9 /* MedicineListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineListRouter.swift; sourceTree = "<group>"; };
+		93F00FAD248E55400043C6C9 /* MedicineListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineListTableViewCell.swift; sourceTree = "<group>"; };
+		93F00FAE248E55400043C6C9 /* MedicineListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedicineListTableViewCell.xib; sourceTree = "<group>"; };
 		9C8A9730E1DD9F5B3A483714 /* Pods-medicines-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medicines-appTests.release.xcconfig"; path = "Target Support Files/Pods-medicines-appTests/Pods-medicines-appTests.release.xcconfig"; sourceTree = "<group>"; };
 		A2BF1AC0C716877B711A0197 /* Pods_medicines_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_medicines_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA00CB0FEF98C67296CF6760 /* Pods-medicines-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medicines-appTests.debug.xcconfig"; path = "Target Support Files/Pods-medicines-appTests/Pods-medicines-appTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +157,7 @@
 		93F00F58248E4FDF0043C6C9 /* medicines-app */ = {
 			isa = PBXGroup;
 			children = (
+				93F00F9C248E53B00043C6C9 /* New Group */,
 				93F00F67248E4FE00043C6C9 /* Info.plist */,
 				93F00F59248E4FDF0043C6C9 /* AppDelegate.swift */,
 				93F00F5B248E4FDF0043C6C9 /* SceneDelegate.swift */,
@@ -175,6 +194,7 @@
 		93F00F8A248E51C50043C6C9 /* Apis */ = {
 			isa = PBXGroup;
 			children = (
+				93F00F9A248E53840043C6C9 /* ApiMedications.swift */,
 				93F00F92248E52540043C6C9 /* BaseApi.swift */,
 			);
 			path = Apis;
@@ -184,7 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				93F00F94248E52770043C6C9 /* GenericResponse.swift */,
-				93F00F96248E52A00043C6C9 /* MedicineResponse.swift */,
+				93F00F96248E52A00043C6C9 /* MedicationResponse.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -192,6 +212,7 @@
 		93F00F8C248E51D30043C6C9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				93F00F9D248E53B90043C6C9 /* MedicineList */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -203,6 +224,36 @@
 				93F00F90248E523B0043C6C9 /* HttpHeaderConstant.swift */,
 			);
 			path = Constant;
+			sourceTree = "<group>";
+		};
+		93F00F9C248E53B00043C6C9 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		93F00F9D248E53B90043C6C9 /* MedicineList */ = {
+			isa = PBXGroup;
+			children = (
+				93F00FA5248E54480043C6C9 /* MedicineList.storyboard */,
+				93F00FA1248E53E60043C6C9 /* MedicineListContract.swift */,
+				93F00FA9248E54680043C6C9 /* MedicineListInteractor.swift */,
+				93F00FA7248E54590043C6C9 /* MedicineListPresenter.swift */,
+				93F00FA3248E54320043C6C9 /* MedicineListViewController.swift */,
+				93F00FAB248E54CE0043C6C9 /* MedicineListRouter.swift */,
+				93F00F9E248E53C40043C6C9 /* Cell */,
+			);
+			path = MedicineList;
+			sourceTree = "<group>";
+		};
+		93F00F9E248E53C40043C6C9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				93F00FAD248E55400043C6C9 /* MedicineListTableViewCell.swift */,
+				93F00FAE248E55400043C6C9 /* MedicineListTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		C270AEF87322A1F4B32E2242 /* Frameworks */ = {
@@ -324,9 +375,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93F00FA6248E54480043C6C9 /* MedicineList.storyboard in Resources */,
 				93F00F66248E4FE00043C6C9 /* LaunchScreen.storyboard in Resources */,
 				93F00F63248E4FE00043C6C9 /* Assets.xcassets in Resources */,
 				93F00F61248E4FDF0043C6C9 /* Main.storyboard in Resources */,
+				93F00FB0248E55400043C6C9 /* MedicineListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,11 +509,18 @@
 			files = (
 				93F00F8F248E521B0043C6C9 /* ApiConfigConstant.swift in Sources */,
 				93F00F5E248E4FDF0043C6C9 /* ViewController.swift in Sources */,
+				93F00FAA248E54680043C6C9 /* MedicineListInteractor.swift in Sources */,
 				93F00F5A248E4FDF0043C6C9 /* AppDelegate.swift in Sources */,
 				93F00F91248E523B0043C6C9 /* HttpHeaderConstant.swift in Sources */,
+				93F00FA8248E54590043C6C9 /* MedicineListPresenter.swift in Sources */,
 				93F00F5C248E4FDF0043C6C9 /* SceneDelegate.swift in Sources */,
+				93F00FA4248E54320043C6C9 /* MedicineListViewController.swift in Sources */,
+				93F00FAC248E54CE0043C6C9 /* MedicineListRouter.swift in Sources */,
 				93F00F93248E52540043C6C9 /* BaseApi.swift in Sources */,
-				93F00F97248E52A00043C6C9 /* MedicineResponse.swift in Sources */,
+				93F00F9B248E53840043C6C9 /* ApiMedications.swift in Sources */,
+				93F00F97248E52A00043C6C9 /* MedicationResponse.swift in Sources */,
+				93F00FA2248E53E60043C6C9 /* MedicineListContract.swift in Sources */,
+				93F00FAF248E55400043C6C9 /* MedicineListTableViewCell.swift in Sources */,
 				93F00F95248E52770043C6C9 /* GenericResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
