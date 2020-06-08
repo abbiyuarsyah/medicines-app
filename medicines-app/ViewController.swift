@@ -15,6 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func onClickButtonNext(_ sender: Any) {
+        let controller = MedicineListRouter.createModule()
+        self.present(controller, animated: true)
+    }
 }
 

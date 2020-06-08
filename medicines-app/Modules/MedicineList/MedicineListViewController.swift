@@ -53,6 +53,7 @@ extension MedicineListViewController: UITableViewDataSource {
 
 extension MedicineListViewController: MedicineListPresenterToViewProtocol {
     func showMedicineListSucceed(medicines: [MedicationResponse]) {
+        medicineList = medicines
         tableView.delegate = self
         tableView.dataSource = self
         tableView.reloadData()

@@ -14,7 +14,7 @@ class MedicineListRouter: MedicineListPresenterToRouterProtocol {
     
     static func createModule() -> MedicineListViewController {
         let viewController = UIStoryboard.init(name: "MedicineList", bundle: nil).instantiateViewController(withIdentifier: "MedicineListViewController") as! MedicineListViewController
-        let presenter: MedicineListViewToPresenterProtocol & MedicineListInteractorToPresenterProtocol = MedicineListPresenter()
+        let presenter = MedicineListPresenter()
         let router = MedicineListRouter()
         let interactor = MedicineListInteractor()
         
@@ -24,6 +24,7 @@ class MedicineListRouter: MedicineListPresenterToRouterProtocol {
         presenter.view = viewController
         router.view = viewController
         interactor.presenter = presenter
+        
         return viewController
     }
 }

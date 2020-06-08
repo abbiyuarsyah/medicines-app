@@ -21,8 +21,6 @@ class MedicineListInteractor: MedicineListPresenterToInteractorProtocol{
     
             if (medicineList.count > 0) {
                 self.presenter?.showMedicineListSucceed(medicines: medicineList)
-            } else if (medicineList.count == 0) {
-                self.presenter?.showMedicineEmpty(info: "Medicine is not available")
             } else {
                 self.presenter?.showMedicineListFailed(info: "Terjadi kesalahan")
             }

@@ -10,19 +10,19 @@ import SwiftyJSON
 
 class MedicationResponse: GenericResponse {
     
-    var id: String?
+    var id: Int?
     var status: String?
     var full_name: String?
-    var total_price: String?
+    var total_price: Int?
     var currency: String?
     var updated_at: String?
     
     required public init(json: JSON?) {
         if let json = json {
-            id = json["id"].string
+            id = json["id"].int
             status = json["status"].string
             full_name = json["full_name"].string
-            total_price = json["total_price"].string
+            total_price = json["total_price"].int
             currency = json["currency"].string
             updated_at = json["updated_at"].string
         }

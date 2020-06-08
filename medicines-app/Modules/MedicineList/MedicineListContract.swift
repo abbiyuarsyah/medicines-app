@@ -37,3 +37,4 @@ protocol MedicineListViewToPresenterProtocol: class {
     
     func fetchMedicineList()
 }
+
