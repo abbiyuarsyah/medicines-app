@@ -237,7 +237,6 @@
 			isa = PBXGroup;
 			children = (
 				93F00FDF248EE0680043C6C9 /* Main */,
-				93F00FDE248EE0640043C6C9 /* New Group */,
 				93F00FC3248EB82B0043C6C9 /* MedicineDetail */,
 				93F00F9D248E53B90043C6C9 /* MedicineList */,
 			);
@@ -306,13 +305,6 @@
 				93F00FC6248EBB740043C6C9 /* MedicineDetailViewController.swift */,
 			);
 			path = MedicineDetail;
-			sourceTree = "<group>";
-		};
-		93F00FDE248EE0640043C6C9 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		93F00FDF248EE0680043C6C9 /* Main */ = {
