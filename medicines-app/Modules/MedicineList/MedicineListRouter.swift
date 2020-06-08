@@ -27,5 +27,11 @@ class MedicineListRouter: MedicineListPresenterToRouterProtocol {
         
         return viewController
     }
+    
+    func navigateToMedicineDetail(id: String) {
+        let viewController = MedicineDetailRouter.createModule()
+        viewController.id = id
+        view?.navigationController?.pushViewController(viewController, animated: true)
+    }
 }
 

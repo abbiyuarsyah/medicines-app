@@ -8,7 +8,7 @@
 
 import Alamofire
 
-class MedicineListInteractor: MedicineListPresenterToInteractorProtocol{
+class MedicineListInteractor: MedicineListPresenterToInteractorProtocol {
 
     var presenter: MedicineListInteractorToPresenterProtocol?
     

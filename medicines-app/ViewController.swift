@@ -17,7 +17,7 @@ class ViewController: UIViewController {
 
     @IBAction func onClickButtonNext(_ sender: Any) {
         let controller = MedicineListRouter.createModule()
-        self.present(controller, animated: true)
+        self.navigationController?.pushViewController(controller, animated: true)
     }
 }
 

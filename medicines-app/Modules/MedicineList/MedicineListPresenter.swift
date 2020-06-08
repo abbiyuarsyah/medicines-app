@@ -15,6 +15,10 @@ class MedicineListPresenter: MedicineListViewToPresenterProtocol {
     func fetchMedicineList() {
         interactor?.fetchMedicineList()
     }
+    
+    func goToMedicineDetail(id: String) {
+        router?.navigateToMedicineDetail(id: id)
+    }
 }
 
 extension MedicineListPresenter: MedicineListInteractorToPresenterProtocol {

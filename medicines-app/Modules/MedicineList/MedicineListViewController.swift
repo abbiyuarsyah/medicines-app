@@ -26,6 +26,10 @@ class MedicineListViewController: UIViewController {
         tableView.separatorStyle = .none
         tableView.register(UINib(nibName: "MedicineListTableViewCell", bundle: nil), forCellReuseIdentifier: "MedicineListTableViewCell")
     }
+    
+    private func goToMedicineDetail(id: String) {
+        presenter?.goToMedicineDetail(id: id)
+    }
 }
 
 extension MedicineListViewController: UITableViewDelegate {
@@ -73,6 +77,10 @@ extension MedicineListViewController: MedicineListCellDelegate {
     func buttonTapped(cell: MedicineListTableViewCell) {
         guard let indexPath = self.tableView.indexPath(for: cell) else {
             return
+        }
+        
+        if let id = medicineList?[indexPath.row].id {
+            self.goToMedicineDetail(id: "\(id)")
         }
     }
 }

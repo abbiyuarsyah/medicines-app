@@ -14,13 +14,15 @@ class MedicationDetailResponse: GenericResponse {
     var prescription_image: String?
     var status: String?
     var patient: Patient?
-    
+    var address: Address?
+
     required public init(json: JSON?) {
         if let json = json {
             id = json["id"].string
             prescription_image = json["prescription_image"].string
             status = json["status"].string
             patient = Patient(json: json["patient"])
+            address = Address(json: json["address"])
         }
     }
 }
@@ -59,8 +61,8 @@ class Address {
             postal_code = json["postal_code"].string
             latitude = json["latitude"].double
             longitude = json["longitude"].double
-            first_line = json["id"].string
-            second_line = json["postal_code"].string
+            first_line = json["first_line"].string
+            second_line = json["second_line"].string
             note = json["note"].string
             province = json["province"].string
             district = json["district"].string
