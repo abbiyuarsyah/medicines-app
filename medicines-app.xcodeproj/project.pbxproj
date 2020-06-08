@@ -221,6 +221,7 @@
 		93F00F8C248E51D30043C6C9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				93F00FC3248EB82B0043C6C9 /* MedicineDetail */,
 				93F00F9D248E53B90043C6C9 /* MedicineList */,
 			);
 			path = Modules;
@@ -274,6 +275,13 @@
 				93F00FC0248EB1720043C6C9 /* DateHelper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		93F00FC3248EB82B0043C6C9 /* MedicineDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MedicineDetail;
 			sourceTree = "<group>";
 		};
 		C270AEF87322A1F4B32E2242 /* Frameworks */ = {

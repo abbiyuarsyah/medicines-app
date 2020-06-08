@@ -43,6 +43,7 @@ extension MedicineListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MedicineListTableViewCell", for: indexPath) as! MedicineListTableViewCell
         cell.selectionStyle = .none
+        cell.delegate = self
         if let medicines = medicineList?[indexPath.row] {
             cell.setUpMedicine(medicines: medicines)
         }
@@ -65,6 +66,14 @@ extension MedicineListViewController: MedicineListPresenterToViewProtocol {
     
     func showMedicineEmpty(info: String) {
         
+    }
+}
+
+extension MedicineListViewController: MedicineListCellDelegate {
+    func buttonTapped(cell: MedicineListTableViewCell) {
+        guard let indexPath = self.tableViewPackage.indexPath(for: cell) else {
+            return
+        }
     }
 }
 

@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol MedicineListCellDelegate: class {
+    func buttonTapped(cell: MedicationResponse)
+}
+
 class MedicineListTableViewCell: UITableViewCell {
     
     @IBOutlet weak var viewCell: UIView!
@@ -16,6 +20,8 @@ class MedicineListTableViewCell: UITableViewCell {
     @IBOutlet weak var labelOrderNumber: UILabel!
     @IBOutlet weak var labelDate: UILabel!
     @IBOutlet weak var labelPrice: UILabel!
+    
+    weak var delegate: MedicineListCellDelegate?
     
     func setUpMedicine(medicines: MedicationResponse) {
         viewCell.addBorderWithRadiusAndShadow()
@@ -34,7 +40,6 @@ class MedicineListTableViewCell: UITableViewCell {
             labelStatus.textColor = .purple
         default:
             labelStatus.textColor = .black
-            
         }
         
         var currency = medicines.currency
@@ -49,5 +54,12 @@ class MedicineListTableViewCell: UITableViewCell {
         } else {
             labelPrice.text = currency
         }
+        
+        let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.goToMedicineDetail))
+        viewCell.addGestureRecognizer(gesture)
+    }
+    
+    @objc func goToMedicineDetail(sender : UITapGestureRecognizer) {
+        self.delegate?.buttonTapped(cell: self)
     }
 }
