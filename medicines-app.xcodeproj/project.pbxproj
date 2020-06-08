@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,11 @@
 		93F00F66248E4FE00043C6C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F00F64248E4FE00043C6C9 /* LaunchScreen.storyboard */; };
 		93F00F71248E4FE00043C6C9 /* medicines_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00F70248E4FE00043C6C9 /* medicines_appTests.swift */; };
 		93F00F7C248E4FE00043C6C9 /* medicines_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00F7B248E4FE00043C6C9 /* medicines_appUITests.swift */; };
+		93F00F8F248E521B0043C6C9 /* ApiConfigConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00F8E248E521B0043C6C9 /* ApiConfigConstant.swift */; };
+		93F00F91248E523B0043C6C9 /* HttpHeaderConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00F90248E523B0043C6C9 /* HttpHeaderConstant.swift */; };
+		93F00F93248E52540043C6C9 /* BaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00F92248E52540043C6C9 /* BaseApi.swift */; };
+		93F00F95248E52770043C6C9 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00F94248E52770043C6C9 /* GenericResponse.swift */; };
+		93F00F97248E52A00043C6C9 /* MedicineResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00F96248E52A00043C6C9 /* MedicineResponse.swift */; };
 		B126A9D85CFC67FFEFC04064 /* Pods_medicines_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2BF1AC0C716877B711A0197 /* Pods_medicines_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +62,11 @@
 		93F00F77248E4FE00043C6C9 /* medicines-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "medicines-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F00F7B248E4FE00043C6C9 /* medicines_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicines_appUITests.swift; sourceTree = "<group>"; };
 		93F00F7D248E4FE00043C6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93F00F8E248E521B0043C6C9 /* ApiConfigConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConfigConstant.swift; sourceTree = "<group>"; };
+		93F00F90248E523B0043C6C9 /* HttpHeaderConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHeaderConstant.swift; sourceTree = "<group>"; };
+		93F00F92248E52540043C6C9 /* BaseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApi.swift; sourceTree = "<group>"; };
+		93F00F94248E52770043C6C9 /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
+		93F00F96248E52A00043C6C9 /* MedicineResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineResponse.swift; sourceTree = "<group>"; };
 		9C8A9730E1DD9F5B3A483714 /* Pods-medicines-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medicines-appTests.release.xcconfig"; path = "Target Support Files/Pods-medicines-appTests/Pods-medicines-appTests.release.xcconfig"; sourceTree = "<group>"; };
 		A2BF1AC0C716877B711A0197 /* Pods_medicines_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_medicines_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA00CB0FEF98C67296CF6760 /* Pods-medicines-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medicines-appTests.debug.xcconfig"; path = "Target Support Files/Pods-medicines-appTests/Pods-medicines-appTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +111,6 @@
 				CA00CB0FEF98C67296CF6760 /* Pods-medicines-appTests.debug.xcconfig */,
 				9C8A9730E1DD9F5B3A483714 /* Pods-medicines-appTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,13 +139,17 @@
 		93F00F58248E4FDF0043C6C9 /* medicines-app */ = {
 			isa = PBXGroup;
 			children = (
+				93F00F67248E4FE00043C6C9 /* Info.plist */,
 				93F00F59248E4FDF0043C6C9 /* AppDelegate.swift */,
 				93F00F5B248E4FDF0043C6C9 /* SceneDelegate.swift */,
 				93F00F5D248E4FDF0043C6C9 /* ViewController.swift */,
-				93F00F5F248E4FDF0043C6C9 /* Main.storyboard */,
 				93F00F62248E4FE00043C6C9 /* Assets.xcassets */,
+				93F00F8A248E51C50043C6C9 /* Apis */,
+				93F00F8D248E51DD0043C6C9 /* Constant */,
+				93F00F8B248E51CC0043C6C9 /* Entities */,
 				93F00F64248E4FE00043C6C9 /* LaunchScreen.storyboard */,
-				93F00F67248E4FE00043C6C9 /* Info.plist */,
+				93F00F5F248E4FDF0043C6C9 /* Main.storyboard */,
+				93F00F8C248E51D30043C6C9 /* Modules */,
 			);
 			path = "medicines-app";
 			sourceTree = "<group>";
@@ -157,6 +170,39 @@
 				93F00F7D248E4FE00043C6C9 /* Info.plist */,
 			);
 			path = "medicines-appUITests";
+			sourceTree = "<group>";
+		};
+		93F00F8A248E51C50043C6C9 /* Apis */ = {
+			isa = PBXGroup;
+			children = (
+				93F00F92248E52540043C6C9 /* BaseApi.swift */,
+			);
+			path = Apis;
+			sourceTree = "<group>";
+		};
+		93F00F8B248E51CC0043C6C9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				93F00F94248E52770043C6C9 /* GenericResponse.swift */,
+				93F00F96248E52A00043C6C9 /* MedicineResponse.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		93F00F8C248E51D30043C6C9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		93F00F8D248E51DD0043C6C9 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				93F00F8E248E521B0043C6C9 /* ApiConfigConstant.swift */,
+				93F00F90248E523B0043C6C9 /* HttpHeaderConstant.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 		C270AEF87322A1F4B32E2242 /* Frameworks */ = {
@@ -408,9 +454,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93F00F8F248E521B0043C6C9 /* ApiConfigConstant.swift in Sources */,
 				93F00F5E248E4FDF0043C6C9 /* ViewController.swift in Sources */,
 				93F00F5A248E4FDF0043C6C9 /* AppDelegate.swift in Sources */,
+				93F00F91248E523B0043C6C9 /* HttpHeaderConstant.swift in Sources */,
 				93F00F5C248E4FDF0043C6C9 /* SceneDelegate.swift in Sources */,
+				93F00F93248E52540043C6C9 /* BaseApi.swift in Sources */,
+				93F00F97248E52A00043C6C9 /* MedicineResponse.swift in Sources */,
+				93F00F95248E52770043C6C9 /* GenericResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
