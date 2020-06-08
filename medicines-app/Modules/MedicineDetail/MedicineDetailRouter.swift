@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class MedicineDetailRouter: MedicineDetailPresenterToRouterProtocol {
     
@@ -26,6 +27,20 @@ class MedicineDetailRouter: MedicineDetailPresenterToRouterProtocol {
         interactor.presenter = presenter
         
         return viewController
+    }
+    
+    func showDialogError(info: String) {
+        let title = "Failed"
+        let alertController = UIAlertController(title: title,
+                                                message: info,
+                                                preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "OK", style: .default) {
+            UIAlert in
+            self.view?.dismiss(animated: true, completion: nil)
+        }
+        alertController.addAction(action)
+        self.view?.present(alertController, animated: true, completion: nil)
     }
 }
 

@@ -33,7 +33,7 @@ class MedicineListTableViewCell: UITableViewCell {
         labelStatus.text = medicines.status
         switch status {
         case "Active":
-            labelStatus.textColor = .green
+            labelStatus.textColor = .systemGreen
         case "Prescription Rejected":
             labelStatus.textColor = .orange
         case "In Review":

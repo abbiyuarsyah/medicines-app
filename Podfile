@@ -10,6 +10,7 @@ target 'medicines-app' do
   pod 'AlamofireNetworkActivityLogger'
   pod 'SwiftyJSON'
   pod 'SDWebImage', '~> 4.0'
+  pod ‘NVActivityIndicatorView’
 
   target 'medicines-appTests' do
     inherit! :search_paths

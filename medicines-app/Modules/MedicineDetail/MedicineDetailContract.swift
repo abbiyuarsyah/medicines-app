@@ -10,6 +10,8 @@ import UIKit
 
 protocol MedicineDetailPresenterToRouterProtocol: class {
     static func createModule() -> MedicineDetailViewController
+    
+    func showDialogError(info: String)
 }
 
 protocol MedicineDetailPresenterToViewProtocol: class {
@@ -34,4 +36,5 @@ protocol MedicineDetailViewToPresenterProtocol: class {
     var router: MedicineDetailPresenterToRouterProtocol? { get set }
     
     func fetchMedicineDetail(id: String)
+    func showDialogError(info: String)
 }

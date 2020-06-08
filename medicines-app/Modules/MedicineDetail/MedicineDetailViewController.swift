@@ -8,6 +8,7 @@
 
 import UIKit
 import SDWebImage
+import NVActivityIndicatorView
 
 class MedicineDetailViewController: UIViewController {
 
@@ -27,6 +28,10 @@ class MedicineDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setDefaultNavigationBar()
+        self.title = "Medicine Detail"
+        
+        NVActivityIndicatorPresenter.sharedInstance.startAnimating(ActivityData(), nil)
         presenter?.fetchMedicineDetail(id: id ?? "0")
     }
     
@@ -61,10 +66,12 @@ class MedicineDetailViewController: UIViewController {
 
 extension MedicineDetailViewController: MedicineDetailPresenterToViewProtocol {
     func showMedicineDetailSucceed(medicineDetail: MedicationDetailResponse) {
+        NVActivityIndicatorPresenter.sharedInstance.stopAnimating(nil)
         self.setViewData(medicineDetail: medicineDetail)
     }
     
     func showMedicineDetailFailed(info: String) {
-        //
+        NVActivityIndicatorPresenter.sharedInstance.stopAnimating(nil)
+        presenter?.showDialogError(info: info)
     }
 }

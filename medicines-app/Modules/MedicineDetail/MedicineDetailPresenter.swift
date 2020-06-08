@@ -15,6 +15,10 @@ class MedicineDetailPresenter: MedicineDetailViewToPresenterProtocol {
     func fetchMedicineDetail(id: String) {
         interactor?.fetchMedicineDetail(id: id)
     }
+    
+    func showDialogError(info: String) {
+        router?.showDialogError(info: info)
+    }
 }
 
 extension MedicineDetailPresenter: MedicineDetailInteractorToPresenterProtocol {

@@ -19,6 +19,10 @@ class MedicineListPresenter: MedicineListViewToPresenterProtocol {
     func goToMedicineDetail(id: String) {
         router?.navigateToMedicineDetail(id: id)
     }
+    
+    func showDialogError(info: String) {
+        router?.showDialogError(info: info)
+    }
 }
 
 extension MedicineListPresenter: MedicineListInteractorToPresenterProtocol {
@@ -28,10 +32,6 @@ extension MedicineListPresenter: MedicineListInteractorToPresenterProtocol {
     
     func showMedicineListFailed(info: String) {
         view?.showMedicineListFailed(info: info)
-    }
-    
-    func showMedicineEmpty(info: String) {
-        view?.showMedicineEmpty(info: info)
     }
 }
 

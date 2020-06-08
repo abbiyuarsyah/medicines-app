@@ -17,7 +17,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ej9-XS-mUr">
                                 <rect key="frame" x="16" y="782" width="382" height="48"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.035294117647058823" green="0.58431372549019611" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="l4Z-Yy-Z1D"/>
                                 </constraints>
@@ -29,19 +29,50 @@
                                     <action selector="onClickButtonNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F5c-zK-xwm"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please, click button next to see the status of your orders" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8F-XD-pEY">
+                                <rect key="frame" x="16" y="711.5" width="382" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Holla, Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4is-24-r3o">
+                                <rect key="frame" x="16" y="674.5" width="382" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_welcome" translatesAutoresizingMaskIntoConstraints="NO" id="SuV-PF-XZK">
+                                <rect key="frame" x="16" y="342.5" width="382" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="R1x-uX-30Q"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="SuV-PF-XZK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5WD-Vv-1YM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4is-24-r3o" secondAttribute="trailing" constant="16" id="8Xh-Hq-4hS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ej9-XS-mUr" secondAttribute="bottom" constant="32" id="9MQ-W0-e8A"/>
+                            <constraint firstItem="y8F-XD-pEY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9VX-zF-fpJ"/>
+                            <constraint firstAttribute="trailing" secondItem="SuV-PF-XZK" secondAttribute="trailing" constant="16" id="D5J-vn-5Th"/>
+                            <constraint firstItem="Ej9-XS-mUr" firstAttribute="top" secondItem="y8F-XD-pEY" secondAttribute="bottom" constant="32" id="FJq-36-GB3"/>
                             <constraint firstItem="Ej9-XS-mUr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="K0C-0L-scz"/>
+                            <constraint firstItem="y8F-XD-pEY" firstAttribute="top" secondItem="4is-24-r3o" secondAttribute="bottom" constant="8" id="Lu5-PT-6kt"/>
+                            <constraint firstItem="4is-24-r3o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Oxl-2y-fy5"/>
+                            <constraint firstItem="SuV-PF-XZK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Pnx-KQ-b9o"/>
+                            <constraint firstAttribute="trailing" secondItem="y8F-XD-pEY" secondAttribute="trailing" constant="16" id="SMT-60-Kd7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ej9-XS-mUr" secondAttribute="trailing" constant="16" id="f8m-TS-CDF"/>
+                            <constraint firstItem="4is-24-r3o" firstAttribute="top" secondItem="SuV-PF-XZK" secondAttribute="bottom" constant="32" id="iN9-9I-Cja"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="102"/>
+            <point key="canvasLocation" x="137.68115942028987" y="101.78571428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image_welcome" width="1666.5" height="1666.5"/>
+    </resources>
 </document>

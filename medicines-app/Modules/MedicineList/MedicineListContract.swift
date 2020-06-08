@@ -12,12 +12,12 @@ protocol MedicineListPresenterToRouterProtocol: class {
     static func createModule() -> MedicineListViewController
     
     func navigateToMedicineDetail(id: String)
+    func showDialogError(info: String)
 }
 
 protocol MedicineListPresenterToViewProtocol: class {
     func showMedicineListSucceed(medicines: [MedicationResponse])
     func showMedicineListFailed(info: String)
-    func showMedicineEmpty(info: String)
 }
 
 protocol MedicineListPresenterToInteractorProtocol: class {
@@ -29,7 +29,6 @@ protocol MedicineListPresenterToInteractorProtocol: class {
 protocol MedicineListInteractorToPresenterProtocol: class {
     func showMedicineListSucceed(medicines: [MedicationResponse])
     func showMedicineListFailed(info: String)
-    func showMedicineEmpty(info: String)
 }
 
 protocol MedicineListViewToPresenterProtocol: class {
@@ -39,5 +38,6 @@ protocol MedicineListViewToPresenterProtocol: class {
     
     func fetchMedicineList()
     func goToMedicineDetail(id: String)
+    func showDialogError(info: String)
 }
 

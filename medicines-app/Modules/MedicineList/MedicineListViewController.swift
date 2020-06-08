@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class MedicineListViewController: UIViewController {
     
@@ -18,7 +19,11 @@ class MedicineListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setDefaultNavigationBar()
+        self.title = "Medicine List"
+
         setTabelView()
+        NVActivityIndicatorPresenter.sharedInstance.startAnimating(ActivityData(), nil)
         presenter?.fetchMedicineList()
     }
     
@@ -58,6 +63,7 @@ extension MedicineListViewController: UITableViewDataSource {
 
 extension MedicineListViewController: MedicineListPresenterToViewProtocol {
     func showMedicineListSucceed(medicines: [MedicationResponse]) {
+        NVActivityIndicatorPresenter.sharedInstance.stopAnimating(nil)
         medicineList = medicines
         tableView.delegate = self
         tableView.dataSource = self
@@ -65,11 +71,8 @@ extension MedicineListViewController: MedicineListPresenterToViewProtocol {
     }
     
     func showMedicineListFailed(info: String) {
-        
-    }
-    
-    func showMedicineEmpty(info: String) {
-        
+        NVActivityIndicatorPresenter.sharedInstance.stopAnimating(nil)
+        presenter?.showDialogError(info: info)
     }
 }
 

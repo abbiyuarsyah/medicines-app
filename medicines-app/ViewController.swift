@@ -12,7 +12,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setDefaultNavigationBar()
+        self.title = "Medicine"
     }
 
     @IBAction func onClickButtonNext(_ sender: Any) {
