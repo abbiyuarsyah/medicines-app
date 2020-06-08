@@ -184,16 +184,14 @@
 				93F00F67248E4FE00043C6C9 /* Info.plist */,
 				93F00F59248E4FDF0043C6C9 /* AppDelegate.swift */,
 				93F00F5B248E4FDF0043C6C9 /* SceneDelegate.swift */,
-				93F00F5D248E4FDF0043C6C9 /* ViewController.swift */,
 				93F00F62248E4FE00043C6C9 /* Assets.xcassets */,
 				93F00F8A248E51C50043C6C9 /* Apis */,
 				93F00F8D248E51DD0043C6C9 /* Constant */,
 				93F00F8B248E51CC0043C6C9 /* Entities */,
 				93F00FB8248EAA240043C6C9 /* Extensions */,
 				93F00FBD248EACDC0043C6C9 /* Helpers */,
-				93F00F64248E4FE00043C6C9 /* LaunchScreen.storyboard */,
-				93F00F5F248E4FDF0043C6C9 /* Main.storyboard */,
 				93F00F8C248E51D30043C6C9 /* Modules */,
+				93F00FE0248EE0790043C6C9 /* SupportFiles */,
 			);
 			path = "medicines-app";
 			sourceTree = "<group>";
@@ -238,6 +236,8 @@
 		93F00F8C248E51D30043C6C9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				93F00FDF248EE0680043C6C9 /* Main */,
+				93F00FDE248EE0640043C6C9 /* New Group */,
 				93F00FC3248EB82B0043C6C9 /* MedicineDetail */,
 				93F00F9D248E53B90043C6C9 /* MedicineList */,
 			);
@@ -306,6 +306,30 @@
 				93F00FC6248EBB740043C6C9 /* MedicineDetailViewController.swift */,
 			);
 			path = MedicineDetail;
+			sourceTree = "<group>";
+		};
+		93F00FDE248EE0640043C6C9 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		93F00FDF248EE0680043C6C9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				93F00F5F248E4FDF0043C6C9 /* Main.storyboard */,
+				93F00F5D248E4FDF0043C6C9 /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		93F00FE0248EE0790043C6C9 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				93F00F64248E4FE00043C6C9 /* LaunchScreen.storyboard */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 		C270AEF87322A1F4B32E2242 /* Frameworks */ = {
