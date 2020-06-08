@@ -12,11 +12,14 @@ import Alamofire
 enum ApiMedications: URLRequestConvertible {
     
     case fetchMedicationList
-    
+    case fetchMedicationDetail(id: String)
+
     var path: String {
         switch self {
         case .fetchMedicationList:
             return "\(ApiConfigConstant.apiVersion)/medications"
+        case .fetchMedicationDetail(let id):
+            return "\(ApiConfigConstant.apiVersion)/medications/\(id)"
         }
     }
     
@@ -24,12 +27,16 @@ enum ApiMedications: URLRequestConvertible {
         switch self {
         case .fetchMedicationList:
             return .get
+        case .fetchMedicationDetail(_):
+            return .get
         }
     }
     
     var parameter: [String: AnyObject] {
         switch self {
         case .fetchMedicationList:
+            return [:]
+        case .fetchMedicationDetail(_):
             return [:]
         }
     }
