@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70849EB1A1B982F84B67E71F /* Pods_medicines_app_medicines_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7CA27B34AFF774FA01E2C0 /* Pods_medicines_app_medicines_appUITests.framework */; };
+		7C06F5EC6520672310088B7D /* Pods_medicines_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00080FE505A2F7599E61F949 /* Pods_medicines_appTests.framework */; };
 		93F00F5A248E4FDF0043C6C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00F59248E4FDF0043C6C9 /* AppDelegate.swift */; };
 		93F00F5C248E4FDF0043C6C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00F5B248E4FDF0043C6C9 /* SceneDelegate.swift */; };
 		93F00F5E248E4FDF0043C6C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00F5D248E4FDF0043C6C9 /* ViewController.swift */; };
@@ -15,6 +17,7 @@
 		93F00F66248E4FE00043C6C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F00F64248E4FE00043C6C9 /* LaunchScreen.storyboard */; };
 		93F00F71248E4FE00043C6C9 /* medicines_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00F70248E4FE00043C6C9 /* medicines_appTests.swift */; };
 		93F00F7C248E4FE00043C6C9 /* medicines_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F00F7B248E4FE00043C6C9 /* medicines_appUITests.swift */; };
+		B126A9D85CFC67FFEFC04064 /* Pods_medicines_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2BF1AC0C716877B711A0197 /* Pods_medicines_app.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00080FE505A2F7599E61F949 /* Pods_medicines_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_medicines_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		417B21A63D7461CF31ACEF74 /* Pods-medicines-app-medicines-appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medicines-app-medicines-appUITests.debug.xcconfig"; path = "Target Support Files/Pods-medicines-app-medicines-appUITests/Pods-medicines-app-medicines-appUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4CC1F82B43F33BA5BC1A8887 /* Pods-medicines-app-medicines-appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medicines-app-medicines-appUITests.release.xcconfig"; path = "Target Support Files/Pods-medicines-app-medicines-appUITests/Pods-medicines-app-medicines-appUITests.release.xcconfig"; sourceTree = "<group>"; };
+		57286E7B6DFA5B3E805BEC22 /* Pods-medicines-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medicines-app.debug.xcconfig"; path = "Target Support Files/Pods-medicines-app/Pods-medicines-app.debug.xcconfig"; sourceTree = "<group>"; };
+		65A670FCF094510FEE67E937 /* Pods-medicines-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medicines-app.release.xcconfig"; path = "Target Support Files/Pods-medicines-app/Pods-medicines-app.release.xcconfig"; sourceTree = "<group>"; };
 		93F00F56248E4FDF0043C6C9 /* medicines-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "medicines-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F00F59248E4FDF0043C6C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93F00F5B248E4FDF0043C6C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		93F00F77248E4FE00043C6C9 /* medicines-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "medicines-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F00F7B248E4FE00043C6C9 /* medicines_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicines_appUITests.swift; sourceTree = "<group>"; };
 		93F00F7D248E4FE00043C6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C8A9730E1DD9F5B3A483714 /* Pods-medicines-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medicines-appTests.release.xcconfig"; path = "Target Support Files/Pods-medicines-appTests/Pods-medicines-appTests.release.xcconfig"; sourceTree = "<group>"; };
+		A2BF1AC0C716877B711A0197 /* Pods_medicines_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_medicines_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA00CB0FEF98C67296CF6760 /* Pods-medicines-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medicines-appTests.debug.xcconfig"; path = "Target Support Files/Pods-medicines-appTests/Pods-medicines-appTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE7CA27B34AFF774FA01E2C0 /* Pods_medicines_app_medicines_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_medicines_app_medicines_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B126A9D85CFC67FFEFC04064 /* Pods_medicines_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C06F5EC6520672310088B7D /* Pods_medicines_appTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70849EB1A1B982F84B67E71F /* Pods_medicines_app_medicines_appUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7ACB587254A78A05E09240B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57286E7B6DFA5B3E805BEC22 /* Pods-medicines-app.debug.xcconfig */,
+				65A670FCF094510FEE67E937 /* Pods-medicines-app.release.xcconfig */,
+				417B21A63D7461CF31ACEF74 /* Pods-medicines-app-medicines-appUITests.debug.xcconfig */,
+				4CC1F82B43F33BA5BC1A8887 /* Pods-medicines-app-medicines-appUITests.release.xcconfig */,
+				CA00CB0FEF98C67296CF6760 /* Pods-medicines-appTests.debug.xcconfig */,
+				9C8A9730E1DD9F5B3A483714 /* Pods-medicines-appTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		93F00F4D248E4FDF0043C6C9 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +112,8 @@
 				93F00F6F248E4FE00043C6C9 /* medicines-appTests */,
 				93F00F7A248E4FE00043C6C9 /* medicines-appUITests */,
 				93F00F57248E4FDF0043C6C9 /* Products */,
+				7ACB587254A78A05E09240B4 /* Pods */,
+				C270AEF87322A1F4B32E2242 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +159,16 @@
 			path = "medicines-appUITests";
 			sourceTree = "<group>";
 		};
+		C270AEF87322A1F4B32E2242 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2BF1AC0C716877B711A0197 /* Pods_medicines_app.framework */,
+				EE7CA27B34AFF774FA01E2C0 /* Pods_medicines_app_medicines_appUITests.framework */,
+				00080FE505A2F7599E61F949 /* Pods_medicines_appTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93F00F80248E4FE00043C6C9 /* Build configuration list for PBXNativeTarget "medicines-app" */;
 			buildPhases = (
+				52A83C73B924DEEC9C5FC7D3 /* [CP] Check Pods Manifest.lock */,
 				93F00F52248E4FDF0043C6C9 /* Sources */,
 				93F00F53248E4FDF0043C6C9 /* Frameworks */,
 				93F00F54248E4FDF0043C6C9 /* Resources */,
+				223BAD562FE773B1A598DACD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93F00F83248E4FE00043C6C9 /* Build configuration list for PBXNativeTarget "medicines-appTests" */;
 			buildPhases = (
+				5FB98A5F4E238D2124A93AEA /* [CP] Check Pods Manifest.lock */,
 				93F00F68248E4FE00043C6C9 /* Sources */,
 				93F00F69248E4FE00043C6C9 /* Frameworks */,
 				93F00F6A248E4FE00043C6C9 /* Resources */,
@@ -170,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93F00F86248E4FE00043C6C9 /* Build configuration list for PBXNativeTarget "medicines-appUITests" */;
 			buildPhases = (
+				7F48ADC5B5EFCDB624E838FE /* [CP] Check Pods Manifest.lock */,
 				93F00F73248E4FE00043C6C9 /* Sources */,
 				93F00F74248E4FE00043C6C9 /* Frameworks */,
 				93F00F75248E4FE00043C6C9 /* Resources */,
+				D4E43314E770F08A4753D8AC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +299,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		223BAD562FE773B1A598DACD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-medicines-app/Pods-medicines-app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-medicines-app/Pods-medicines-app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-medicines-app/Pods-medicines-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52A83C73B924DEEC9C5FC7D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-medicines-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FB98A5F4E238D2124A93AEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-medicines-appTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F48ADC5B5EFCDB624E838FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-medicines-app-medicines-appUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4E43314E770F08A4753D8AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-medicines-app-medicines-appUITests/Pods-medicines-app-medicines-appUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-medicines-app-medicines-appUITests/Pods-medicines-app-medicines-appUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-medicines-app-medicines-appUITests/Pods-medicines-app-medicines-appUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		93F00F52248E4FDF0043C6C9 /* Sources */ = {
@@ -432,6 +581,7 @@
 		};
 		93F00F81248E4FE00043C6C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57286E7B6DFA5B3E805BEC22 /* Pods-medicines-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +599,7 @@
 		};
 		93F00F82248E4FE00043C6C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65A670FCF094510FEE67E937 /* Pods-medicines-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +617,7 @@
 		};
 		93F00F84248E4FE00043C6C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA00CB0FEF98C67296CF6760 /* Pods-medicines-appTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +639,7 @@
 		};
 		93F00F85248E4FE00043C6C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C8A9730E1DD9F5B3A483714 /* Pods-medicines-appTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +661,7 @@
 		};
 		93F00F87248E4FE00043C6C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 417B21A63D7461CF31ACEF74 /* Pods-medicines-app-medicines-appUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +681,7 @@
 		};
 		93F00F88248E4FE00043C6C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC1F82B43F33BA5BC1A8887 /* Pods-medicines-app-medicines-appUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
