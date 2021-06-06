@@ -1,5 +1,4 @@
-# Mobile Technical Task
-Apps for Medicine Orders
+# Apps for Medicine Orders
 
 # Installing
 ```
